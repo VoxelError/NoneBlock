@@ -1,0 +1,33 @@
+{
+	"sea_level": 63,
+	"disable_mob_generation": true,
+	"aquifers_enabled": false,
+	"ore_veins_enabled": false,
+	"legacy_random_source": false,
+	"default_block": { "Name": "barrier" },
+	"default_fluid": { "Name": "air" },
+	"noise": { "min_y": -64, "height": 16, "size_horizontal": 1, "size_vertical": 2 },
+	"noise_router": {
+		"final_density": 1,
+		"initial_density_without_jaggedness": 0,
+		"barrier": 0,
+		"fluid_level_floodedness": 0,
+		"fluid_level_spread": 0,
+		"lava": 0,
+		"vein_toggle": 0,
+		"vein_ridged": 0,
+		"vein_gap": 0,
+		"temperature": { "type": "shifted_noise", "noise": "temperature", "xz_scale": 0.25, "y_scale": 0, "shift_x": "shift_x", "shift_y": 0, "shift_z": "shift_z" },
+		"vegetation": { "type": "shifted_noise", "noise": "vegetation", "xz_scale": 0.25, "y_scale": 0, "shift_x": "shift_x", "shift_y": 0, "shift_z": "shift_z" },
+		"continents": "overworld/continents",
+		"erosion": "overworld/erosion",
+		"depth": "overworld/depth",
+		"ridges": "overworld/ridges"
+	},
+	"spawn_target": [],
+	"surface_rule": {
+		"type": "condition",
+		"if_true": { "type": "y_above", "anchor": { "above_bottom": 1 }, "surface_depth_multiplier": 0, "add_stone_depth": false },
+		"then_run": { "type": "block", "result_state": { "Name": "air" } }
+	}
+}

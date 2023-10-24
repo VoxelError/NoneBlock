@@ -1,0 +1,42 @@
+{
+	"type": "block",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "sculk_sensor",
+					"conditions": [
+						{
+							"condition": "match_tool",
+							"predicate": {
+								"enchantments": [
+									{
+										"enchantment": "silk_touch"
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "echo_shard",
+					"conditions": [
+						{
+							"condition": "table_bonus",
+							"enchantment": "fortune",
+							"chances": [
+								0,
+								0.005,
+								0.0075,
+								0.01
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

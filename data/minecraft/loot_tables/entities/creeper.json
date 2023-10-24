@@ -1,0 +1,96 @@
+{
+	"type": "entity",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "gunpowder"
+				}
+			],
+			"functions": [
+				{
+					"function": "set_count",
+					"count": {
+						"min": 0,
+						"max": 2
+					}
+				},
+				{
+					"function": "looting_enchant",
+					"count": {
+						"min": 0,
+						"max": 1
+					}
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "alternatives",
+					"children": [
+						{
+							"type": "item",
+							"name": "disc_fragment_5",
+							"conditions": [
+								{
+									"condition": "entity_properties",
+									"entity": "this",
+									"predicate": {
+										"location": {
+											"biome": "deep_dark"
+										}
+									}
+								}
+							]
+						},
+						{
+							"type": "group",
+							"children": [
+								{
+									"type": "tag",
+									"name": "creeper_drop_music_discs",
+									"expand": true
+								},
+								{
+									"type": "item",
+									"name": "music_disc_otherside"
+								}
+							]
+						}
+					]
+				}
+			],
+			"conditions": [
+				{
+					"condition": "entity_properties",
+					"entity": "killer",
+					"predicate": {
+						"type": "#skeletons"
+					}
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "music_disc_pigstep"
+				}
+			],
+			"conditions": [
+				{
+					"condition": "entity_properties",
+					"entity": "killer",
+					"predicate": {
+						"type": "piglin"
+					}
+				}
+			]
+		}
+	]
+}

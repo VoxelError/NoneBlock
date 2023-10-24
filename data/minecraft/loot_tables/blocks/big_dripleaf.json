@@ -1,0 +1,38 @@
+{
+	"type": "block",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "alternatives",
+					"children": [
+						{
+							"type": "item",
+							"name": "small_dripleaf",
+							"conditions": [
+								{
+									"condition": "match_tool",
+									"predicate": {
+										"items": [
+											"shears"
+										]
+									}
+								}
+							]
+						},
+						{
+							"type": "item",
+							"name": "big_dripleaf",
+							"conditions": [
+								{
+									"condition": "survives_explosion"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

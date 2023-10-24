@@ -1,0 +1,39 @@
+{
+	"type": "entity",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "dragon_egg",
+					"conditions": [
+						{
+							"condition": "killed_by_player"
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "dragon_head",
+					"conditions": [
+						{
+							"condition": "damage_source_properties",
+							"predicate": {
+								"source_entity": {
+									"type": "creeper",
+									"nbt": "{powered: 1b}"
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

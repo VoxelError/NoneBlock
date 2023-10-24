@@ -1,0 +1,9 @@
+{
+	"feature": "minecraft:end_island",
+	"placement": [
+		{
+			"type": "count",
+			"count": 0
+		}
+	]
+}

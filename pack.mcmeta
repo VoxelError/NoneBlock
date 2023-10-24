@@ -1,0 +1,14 @@
+{
+	"pack": {
+		"pack_format": 11,
+		"description": ""
+	},
+	"filter": {
+		"block": [
+			{
+				"namespace": "minecraft",
+				"path": "tags/worldgen/biome/has_structure/.*"
+			}
+		]
+	}
+}

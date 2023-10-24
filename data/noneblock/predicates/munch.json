@@ -1,0 +1,78 @@
+[
+	{
+		"condition": "entity_properties",
+		"entity": "this",
+		"predicate": {
+			"type": "item",
+			"nbt": "{Item: {Count: 1b}}"
+		}
+	},
+	{
+		"condition": "alternative",
+		"terms": [
+			{
+				"condition": "entity_properties",
+				"entity": "this",
+				"predicate": {
+					"nbt": "{Item: {id: \"minecraft:coal\"}}"
+				}
+			},
+			{
+				"condition": "entity_properties",
+				"entity": "this",
+				"predicate": {
+					"nbt": "{Item: {id: \"minecraft:iron_ingot\"}}"
+				}
+			},
+			{
+				"condition": "entity_properties",
+				"entity": "this",
+				"predicate": {
+					"nbt": "{Item: {id: \"minecraft:copper_ingot\"}}"
+				}
+			},
+			{
+				"condition": "entity_properties",
+				"entity": "this",
+				"predicate": {
+					"nbt": "{Item: {id: \"minecraft:gold_ingot\"}}"
+				}
+			},
+			{
+				"condition": "entity_properties",
+				"entity": "this",
+				"predicate": {
+					"nbt": "{Item: {id: \"minecraft:redstone\"}}"
+				}
+			},
+			{
+				"condition": "entity_properties",
+				"entity": "this",
+				"predicate": {
+					"nbt": "{Item: {id: \"minecraft:emerald\"}}"
+				}
+			},
+			{
+				"condition": "entity_properties",
+				"entity": "this",
+				"predicate": {
+					"nbt": "{Item: {id: \"minecraft:lapis_lazuli\"}}"
+				}
+			},
+			{
+				"condition": "entity_properties",
+				"entity": "this",
+				"predicate": {
+					"nbt": "{Item: {id: \"minecraft:diamond\"}}"
+				}
+			},
+			{
+				"condition": "entity_properties",
+				"entity": "this",
+				"predicate": {
+					"nbt": "{Item: {id: \"minecraft:quartz\"}}"
+				}
+			}
+		]
+	}
+]

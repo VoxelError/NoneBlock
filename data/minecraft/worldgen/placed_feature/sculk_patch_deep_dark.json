@@ -1,0 +1,9 @@
+{
+	"feature": "minecraft:sculk_patch_deep_dark",
+	"placement": [
+		{
+			"type": "count",
+			"count": 0
+		}
+	]
+}

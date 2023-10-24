@@ -1,0 +1,52 @@
+[
+	{
+		"condition": "alternative",
+		"terms": [
+			{
+				"condition": "entity_properties",
+				"entity": "this",
+				"predicate": {
+					"nbt": "{VillagerData: {profession: \"minecraft:cleric\", level: 5}}"
+				}
+			},
+			{
+				"condition": "entity_properties",
+				"entity": "this",
+				"predicate": {
+					"nbt": "{VillagerData: {profession: \"minecraft:fisherman\", level: 4}}"
+				}
+			},
+			{
+				"condition": "entity_properties",
+				"entity": "this",
+				"predicate": {
+					"nbt": "{VillagerData: {profession: \"minecraft:leatherworker\", level: 5}}"
+				}
+			},
+			{
+				"condition": "entity_properties",
+				"entity": "this",
+				"predicate": {
+					"nbt": "{VillagerData: {profession: \"minecraft:librarian\", level: 5}}",
+					"location": {
+						"biome": "deep_dark"
+					}
+				}
+			},
+			{
+				"condition": "entity_properties",
+				"entity": "this",
+				"predicate": {
+					"nbt": "{VillagerData: {profession: \"minecraft:mason\", level: 3}}"
+				}
+			},
+			{
+				"condition": "entity_properties",
+				"entity": "this",
+				"predicate": {
+					"nbt": "{VillagerData: {profession: \"minecraft:weaponsmith\", level: 5}}"
+				}
+			}
+		]
+	}
+]

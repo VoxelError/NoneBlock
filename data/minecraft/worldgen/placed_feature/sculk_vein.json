@@ -1,0 +1,9 @@
+{
+	"feature": "minecraft:sculk_vein",
+	"placement": [
+		{
+			"type": "count",
+			"count": 0
+		}
+	]
+}

@@ -1,0 +1,73 @@
+{
+	"type": "entity",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "loot_table",
+					"name": "entities/zombie"
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "alternatives",
+					"children": [
+						{
+							"type": "item",
+							"name": "red_sand",
+							"conditions": [
+								{
+									"condition": "alternative",
+									"terms": [
+										{
+											"condition": "location_check",
+											"predicate": {
+												"biome": "badlands"
+											}
+										},
+										{
+											"condition": "location_check",
+											"predicate": {
+												"biome": "eroded_badlands"
+											}
+										},
+										{
+											"condition": "location_check",
+											"predicate": {
+												"biome": "wooded_badlands"
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "item",
+							"name": "sand"
+						}
+					]
+				}
+			],
+			"functions": [
+				{
+					"function": "set_count",
+					"count": {
+						"min": 0,
+						"max": 2
+					}
+				},
+				{
+					"function": "looting_enchant",
+					"count": {
+						"min": 0,
+						"max": 1
+					}
+				}
+			]
+		}
+	]
+}

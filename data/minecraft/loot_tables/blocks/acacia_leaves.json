@@ -1,0 +1,96 @@
+{
+	"type": "block",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "alternatives",
+					"children": [
+						{
+							"type": "item",
+							"name": "acacia_leaves",
+							"conditions": [
+								{
+									"condition": "alternative",
+									"terms": [
+										{
+											"condition": "match_tool",
+											"predicate": {
+												"items": [
+													"shears"
+												]
+											}
+										},
+										{
+											"condition": "match_tool",
+											"predicate": {
+												"enchantments": [
+													{
+														"enchantment": "silk_touch"
+													}
+												]
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "group",
+							"children": [
+								{
+									"type": "item",
+									"name": "acacia_sapling",
+									"conditions": [
+										{
+											"condition": "survives_explosion"
+										},
+										{
+											"condition": "table_bonus",
+											"enchantment": "fortune",
+											"chances": [
+												0.05,
+												0.0625,
+												0.083333336,
+												0.1
+											]
+										}
+									]
+								},
+								{
+									"type": "item",
+									"name": "dead_bush",
+									"functions": [
+										{
+											"function": "set_count",
+											"count": {
+												"min": 1,
+												"max": 2
+											}
+										},
+										{
+											"function": "explosion_decay"
+										}
+									],
+									"conditions": [
+										{
+											"condition": "table_bonus",
+											"enchantment": "fortune",
+											"chances": [
+												0.02,
+												0.022222223,
+												0.025,
+												0.033333335
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

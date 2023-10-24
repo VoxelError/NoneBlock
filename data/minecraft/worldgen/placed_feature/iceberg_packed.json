@@ -1,0 +1,9 @@
+{
+	"feature": "iceberg_packed",
+	"placement": [
+		{
+			"type": "count",
+			"count": 0
+		}
+	]
+}
