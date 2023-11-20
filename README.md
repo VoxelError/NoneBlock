@@ -2,7 +2,7 @@
 
 ![111](https://github.com/VoxelError/NoneBlock/assets/131634556/b7a0134c-fb8d-4255-aa94-1e74350793ae)
 
-Skyblock, with a twist. You start in a void world, with no blocks or items. The only way to start is to enable the bonus chest during world creation.
+Skyblock, but with a twist. You start in a void world, with no blocks or items. The only way to start is to enable the bonus chest during world creation.
 
 Some additional details:
 - Biomes and structures still generate, but with all of their blocks removed. They generate in the exact same locations as a normal world of the same seed.
