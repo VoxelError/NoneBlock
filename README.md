@@ -10,3 +10,5 @@ Some additional details:
 - The Nether and End dimensions generate like the Overworld.
 - Some additional features have been added to allow you to access mobs, items, and blocks that you can normally access in survival.
 - It's recommended to use a client-side mod, such as MiniHud, to see biome boundaries and structure bounding boxes.
+
+I don't consider this pack to be finished, despite the amount of polishing I've done. It should be perfectly playable, but I might continue to work on it in the future.
